@@ -8,15 +8,16 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+
 class Solution {
 public:
 // ab me array lunga simple sa 
-vector<int>arr;
+vector<int> arr;
     Solution(ListNode* head) {
         // ab array mme sare num daal dung a
         ListNode* temp = head;
         
-        while (temp ! = Null){
+        while(temp != NULL){
         //array me push k(temparta rahunga number 
         arr.push_back(temp->val);
         temp = temp->next;
@@ -31,8 +32,3 @@ vector<int>arr;
     }
 };
 
-/**
- * Your Solution object will be instantiated and called as such:
- * Solution* obj = new Solution(head);
- * int param_1 = obj->getRandom();
- */
